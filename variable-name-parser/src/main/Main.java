@@ -8,9 +8,12 @@ public class Main {
         VariableNameParser.getVariableName(TestClass.class, VariableNameType.SNAKE).forEach((k, e)->{
             System.out.println(e);
         });
+        VariableNameParser.getVariableName(TestClass.class, VariableNameType.CAMEL).forEach((k, e)->{
+            System.out.println(e);
+        });
     }
 }
-class TestClass{
+class TestClass implements ParseAbleData{
     String number;
     String userName;
     String phoneNumber;

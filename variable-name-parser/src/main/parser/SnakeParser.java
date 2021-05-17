@@ -2,7 +2,7 @@ package main.parser;
 
 public class SnakeParser implements VariableNameDetailParser{
     @Override
-    public String getParse(String variableName) {
+    public String parse(String variableName) {
         char[] arrName= variableName.toCharArray();
         StringBuilder builder= new StringBuilder();
         for(int i = 0 ; i < arrName.length ;i++){
