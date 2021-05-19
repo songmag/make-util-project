@@ -1,8 +1,11 @@
-package main.parser;
+package parser;
 
 public class SnakeParser implements VariableNameDetailParser{
     @Override
     public String parse(String variableName) {
+        if(!canParse(variableName)){
+            return variableName;
+        }
         char[] arrName= variableName.toCharArray();
         StringBuilder builder= new StringBuilder();
         for(int i = 0 ; i < arrName.length ;i++){
@@ -14,5 +17,9 @@ public class SnakeParser implements VariableNameDetailParser{
             }
         }
         return builder.toString();
+    }
+
+    private boolean canParse(String value){
+        return !value.contains("_");
     }
 }

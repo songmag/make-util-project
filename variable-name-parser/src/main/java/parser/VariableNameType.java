@@ -1,4 +1,4 @@
-package main.parser;
+package parser;
 
 public enum VariableNameType {
     SNAKE(new SnakeParser()),CAMEL(new CamelParser());

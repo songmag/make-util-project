@@ -1,7 +1,5 @@
-package main;
-
-import main.parser.VariableNameParser;
-import main.parser.VariableNameType;
+import parser.*;
+import parser.ParseAbleData;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,8 +11,8 @@ public class Main {
         });
     }
 }
-class TestClass implements ParseAbleData{
-    String number;
-    String userName;
-    String phoneNumber;
+class TestClass implements ParseAbleData {
+    int userId;
+    int phoneNumber;
+    int caseOffer;
 }
