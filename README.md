@@ -1,2 +1,40 @@
 # make-util-project
-내가쓰는 유틸 프로그램 제작소
+
+---
+
+### Java Util
+
+
+### Typescript Util
+
+- XLSX Util
+
+### xlsxReadToObject<TYPE>
+
+args
+
+> fileName : string
+
+> fields: (keyof Type)[]
+
+> requiredFields : (keyof Type)[] :: nullable
+
+result
+
+> Type[] | null
+
+
+### function writeObjectToXlsx<Type>
+
+args
+
+> data : Type[]
+
+> options : {
+	newFileName : string; :: nullable
+	headers : string[]; :: nullable
+  } :: nullable
+
+result
+
+> void  
